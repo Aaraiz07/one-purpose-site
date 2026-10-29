@@ -1,0 +1,132 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Privacy Policy — One Purpose</title>
+<style>
+  :root {
+    --bg: #F5F1E8; --fg: #1c1b18; --sub: #5c574e;
+    --hair: #ddd6c7; --accent: #6b7f5e; --card: #fffdf8;
+  }
+  @media (prefers-color-scheme: dark) {
+    :root { --bg:#16181B; --fg:#e8e6e1; --sub:#9a958c; --hair:#2c2f33; --accent:#8fa87f; --card:#1d2024; }
+  }
+  * { box-sizing: border-box; }
+  body {
+    margin: 0; padding: 2.5rem 1.25rem 5rem;
+    background: var(--bg); color: var(--fg);
+    font: 16px/1.65 -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
+  }
+  main { max-width: 44rem; margin: 0 auto; }
+  h1 { font-size: 1.9rem; line-height: 1.2; margin: 0 0 .4rem; letter-spacing: -.02em; }
+  h2 { font-size: 1.15rem; margin: 2.4rem 0 .6rem; letter-spacing: -.01em; }
+  h3 { font-size: 1rem; margin: 1.5rem 0 .4rem; }
+  .meta { color: var(--sub); font-size: .9rem; margin-bottom: 2.5rem; }
+  p, li { color: var(--fg); }
+  ul { padding-left: 1.2rem; }
+  li { margin: .35rem 0; }
+  a { color: var(--accent); }
+  .card {
+    background: var(--card); border: 1px solid var(--hair);
+    border-radius: 12px; padding: 1rem 1.2rem; margin: 1.2rem 0;
+  }
+  .card p:first-child { margin-top: 0; }
+  .card p:last-child { margin-bottom: 0; }
+  table { border-collapse: collapse; width: 100%; margin: 1rem 0; font-size: .93rem; }
+  th, td { text-align: left; padding: .6rem .5rem; border-bottom: 1px solid var(--hair); vertical-align: top; }
+  th { font-weight: 600; }
+  .tag {
+    display: inline-block; font-size: .78rem; padding: .1rem .5rem;
+    border-radius: 99px; border: 1px solid var(--hair); color: var(--sub);
+  }
+  footer { margin-top: 3.5rem; padding-top: 1.2rem; border-top: 1px solid var(--hair); color: var(--sub); font-size: .88rem; }
+  code { background: var(--card); border: 1px solid var(--hair); border-radius: 4px; padding: .1rem .3rem; font-size: .9em; }
+</style>
+</head>
+<body>
+<main>
+
+<h1>Privacy Policy</h1>
+<p class="meta">One Purpose · Last updated 29 October 2026</p>
+
+<div class="card">
+  <p><strong>The short version.</strong> One Purpose does not have accounts and does not ask who you are. Everything about your reading — your position in the Quran, your daily goal, your streak — stays on your device and is never uploaded. The app sends crash reports so faults can be fixed, and it sends anonymous usage statistics <em>only</em> if you turn them on. You can turn them off again at any time.</p>
+</div>
+
+<h2>Who is responsible</h2>
+<p>One Purpose is published by Muhammad Aaraiz Wasim, an individual developer. This policy covers the iOS app One Purpose. For anything in this policy, contact <a href="mailto:aaraizwaseem@gmail.com">aaraizwaseem@gmail.com</a>.</p>
+
+<h2>What stays on your device</h2>
+<p>The following never leaves your phone. It is stored in the app's private storage and is removed when you uninstall the app:</p>
+<ul>
+  <li>Your reading position in the Quran</li>
+  <li>Your daily goal, streak, and completion history</li>
+  <li>Your chosen script, font, translation, and language</li>
+  <li>Your reminder time and notification preference</li>
+</ul>
+<p>There is no account and no sync, and One Purpose runs no server of its own.</p>
+
+<h2>The Quran text and translations</h2>
+<p>One Purpose uses the Quran.Foundation APIs (the service behind Quran.com) to download the Arabic text and the translation you choose. Quran data is provided by Quran.Foundation. When you read a surah or change translation, the app asks their servers for that text and keeps a copy on your device so it can be read again without a connection. These requests carry no account or personal details, but, as with any internet request, the servers that answer them can see your device's IP address. How Quran.Foundation handles that is described in <a href="https://quran.com/privacy">their privacy policy</a>.</p>
+
+<h2>What is sent off your device</h2>
+
+<h3>Crash reports <span class="tag">on by default</span></h3>
+<p>The app uses Firebase Crashlytics, a service provided by Google, to report crashes so they can be diagnosed and fixed. A report is sent only when the app actually crashes, and contains:</p>
+<ul>
+  <li>The technical stack trace of the fault</li>
+  <li>Device model, operating system version, and app version</li>
+  <li>A randomly generated installation identifier, which is not linked to you and is reset if you reinstall</li>
+</ul>
+<p>Crash reports contain no personal information and nothing about what you were reading.</p>
+
+<h3>Usage statistics <span class="tag">off unless you enable them</span></h3>
+<p>If you enable analytics in Settings, the app uses Firebase Analytics to record anonymous events that show how the app is used in aggregate — for example that a daily goal was completed, that a language was changed, or that a verse was shared.</p>
+<p>These events record <strong>counts and settings, never content</strong>. The app never sends the text of a verse, and there are no free-text fields.</p>
+<p>This is off when you install the app. Nothing is sent unless you switch it on, and switching it off stops collection.</p>
+
+<h2>Summary of data</h2>
+<table>
+  <tr><th>Data</th><th>Purpose</th><th>Sent?</th></tr>
+  <tr><td>Reading position, streak, settings</td><td>Running the app</td><td>Never — device only</td></tr>
+  <tr><td>Crash diagnostics</td><td>Fixing faults</td><td>On crash</td></tr>
+  <tr><td>Anonymous usage events</td><td>Understanding which features are used</td><td>Only if you opt in</td></tr>
+  <tr><td>Requests for Quran text and translations</td><td>Showing the text you chose</td><td>When you read; sent to Quran.Foundation</td></tr>
+  <tr><td>Name, email, contacts, location, photos</td><td>—</td><td>Never collected</td></tr>
+</table>
+
+<h2>Who else sees it</h2>
+<p>Crash and analytics data is processed by Google as part of Firebase, acting as a service provider on our behalf. It is not sold, and it is not shared with advertisers. One Purpose contains no advertising and no third-party tracking or ad SDKs.</p>
+<p>Google's handling of this data is governed by the <a href="https://firebase.google.com/support/privacy">Firebase Privacy and Security policy</a>.</p>
+
+<h2>Optional tips</h2>
+<p>One Purpose is free. If you choose to leave a tip, the purchase is made through Apple's In-App Purchase and is handled entirely by Apple. We never see your name, card, or Apple ID, only that a tip was completed. A tip unlocks nothing.</p>
+
+<h2>Your rights</h2>
+<p>If you are in the UK, EU, or another region with equivalent law, you have the right to access, correct, or erase data relating to you, and to object to or restrict its processing.</p>
+<p>In practice, most of this is directly in your hands:</p>
+<ul>
+  <li><strong>Stop analytics collection</strong> — turn the setting off in the app.</li>
+  <li><strong>Erase everything held on your device</strong> — uninstall the app.</li>
+  <li><strong>Request erasure of crash or analytics records</strong> — email us. Because the data is not linked to your identity, we may not be able to find the records of a particular person, but we will do what we can with details such as your device model and the approximate date.</li>
+</ul>
+<p>The lawful basis for crash reporting is legitimate interest in keeping the app functional; the lawful basis for analytics is your consent, which you give by enabling the setting and may withdraw at any time.</p>
+
+<h2>Children</h2>
+<p>One Purpose is suitable for all ages and is not directed at children specifically. It does not knowingly collect personal information from anyone, of any age.</p>
+
+<h2>Retention</h2>
+<p>Crash reports are retained by Firebase Crashlytics for 90 days. Analytics events are retained for no more than 14 months. Data on your device is kept until you delete it or uninstall the app.</p>
+
+<h2>Changes</h2>
+<p>If this policy changes materially, the updated version will be posted here with a new date, and a notice will appear in the app's release notes.</p>
+
+<footer>
+  One Purpose — one ayat at a time.<br>
+  <a href="support.html">Support</a> · <a href="mailto:aaraizwaseem@gmail.com">Contact</a>
+</footer>
+
+</main>
+</body>
+</html>
