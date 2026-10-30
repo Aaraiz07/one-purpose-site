@@ -48,10 +48,10 @@
 <main>
 
 <h1>Privacy Policy</h1>
-<p class="meta">One Purpose · Last updated 29 October 2026</p>
+<p class="meta">One Purpose · Last updated 30 October 2026</p>
 
 <div class="card">
-  <p><strong>The short version.</strong> One Purpose does not have accounts and does not ask who you are. Everything about your reading — your position in the Quran, your daily goal, your streak — stays on your device and is never uploaded. The app sends crash reports so faults can be fixed, and it sends anonymous usage statistics <em>only</em> if you turn them on. You can turn them off again at any time.</p>
+  <p><strong>The short version.</strong> One Purpose does not have accounts and does not ask who you are. Everything about your reading — your position in the Quran, your daily goal, your streak — stays on your device and is never uploaded. The app sends anonymous crash reports and usage statistics <em>only</em> if you turn them on in Settings (they are off when you install the app). You can turn them off again at any time.</p>
 </div>
 
 <h2>Who is responsible</h2>
@@ -65,15 +65,15 @@
   <li>Your chosen script, font, translation, and language</li>
   <li>Your reminder time and notification preference</li>
 </ul>
-<p>There is no account and no sync, and One Purpose runs no server of its own.</p>
+<p>There is no account and no sync. The only server One Purpose operates is a small relay (a Cloudflare Worker) that forwards your requests for Quran text to Quran.Foundation and keeps the answers briefly so they load faster; the relay's own code stores and logs nothing about you.</p>
 
 <h2>The Quran text and translations</h2>
-<p>One Purpose uses the Quran.Foundation APIs (the service behind Quran.com) to download the Arabic text and the translation you choose. Quran data is provided by Quran.Foundation. When you read a surah or change translation, the app asks their servers for that text and keeps a copy on your device so it can be read again without a connection. These requests carry no account or personal details, but, as with any internet request, the servers that answer them can see your device's IP address. How Quran.Foundation handles that is described in <a href="https://quran.com/privacy">their privacy policy</a>.</p>
+<p>One Purpose uses the Quran.Foundation APIs (the service behind Quran.com) to download the Arabic text and the translation you choose. Quran data is provided by Quran.Foundation. When you read a surah or change translation, the app asks their servers for that text and keeps a copy on your device so it can be read again without a connection. These requests carry no account or personal details, but, as with any internet request, the servers that answer them (the relay, hosted by Cloudflare, and Quran.Foundation) can see your device's IP address. How Quran.Foundation handles that is described in <a href="https://quran.com/privacy">their privacy policy</a>.</p>
 
 <h2>What is sent off your device</h2>
 
-<h3>Crash reports <span class="tag">on by default</span></h3>
-<p>The app uses Firebase Crashlytics, a service provided by Google, to report crashes so they can be diagnosed and fixed. A report is sent only when the app actually crashes, and contains:</p>
+<h3>Crash reports <span class="tag">off unless you enable them</span></h3>
+<p>The app uses Firebase Crashlytics, a service provided by Google, to report crashes so they can be diagnosed and fixed. If you enable this in Settings, a report is sent only when the app actually crashes, and contains:</p>
 <ul>
   <li>The technical stack trace of the fault</li>
   <li>Device model, operating system version, and app version</li>
@@ -90,7 +90,7 @@
 <table>
   <tr><th>Data</th><th>Purpose</th><th>Sent?</th></tr>
   <tr><td>Reading position, streak, settings</td><td>Running the app</td><td>Never — device only</td></tr>
-  <tr><td>Crash diagnostics</td><td>Fixing faults</td><td>On crash</td></tr>
+  <tr><td>Crash diagnostics</td><td>Fixing faults</td><td>On crash, only if you opt in</td></tr>
   <tr><td>Anonymous usage events</td><td>Understanding which features are used</td><td>Only if you opt in</td></tr>
   <tr><td>Requests for Quran text and translations</td><td>Showing the text you chose</td><td>When you read; sent to Quran.Foundation</td></tr>
   <tr><td>Name, email, contacts, location, photos</td><td>—</td><td>Never collected</td></tr>
@@ -111,7 +111,7 @@
   <li><strong>Erase everything held on your device</strong> — uninstall the app.</li>
   <li><strong>Request erasure of crash or analytics records</strong> — email us. Because the data is not linked to your identity, we may not be able to find the records of a particular person, but we will do what we can with details such as your device model and the approximate date.</li>
 </ul>
-<p>The lawful basis for crash reporting is legitimate interest in keeping the app functional; the lawful basis for analytics is your consent, which you give by enabling the setting and may withdraw at any time.</p>
+<p>The lawful basis for both crash reporting and analytics is your consent, which you give by enabling the setting and may withdraw at any time.</p>
 
 <h2>Children</h2>
 <p>One Purpose is suitable for all ages and is not directed at children specifically. It does not knowingly collect personal information from anyone, of any age.</p>
