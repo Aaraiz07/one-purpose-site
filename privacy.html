@@ -48,7 +48,7 @@
 <main>
 
 <h1>Privacy Policy</h1>
-<p class="meta">One Purpose · Last updated 30 October 2026</p>
+<p class="meta">One Purpose · Last updated 31 October 2026</p>
 
 <div class="card">
   <p><strong>The short version.</strong> One Purpose does not have accounts and does not ask who you are. Everything about your reading — your position in the Quran, your daily goal, your streak — stays on your device and is never uploaded. The app sends anonymous crash reports and usage statistics <em>only</em> if you turn them on in Settings (they are off when you install the app). You can turn them off again at any time.</p>
@@ -69,6 +69,9 @@
 
 <h2>The Quran text and translations</h2>
 <p>One Purpose uses the Quran.Foundation APIs (the service behind Quran.com) to download the Arabic text and the translation you choose. Quran data is provided by Quran.Foundation. When you read a surah or change translation, the app asks their servers for that text and keeps a copy on your device so it can be read again without a connection. These requests carry no account or personal details, but, as with any internet request, the servers that answer them (the relay, hosted by Cloudflare, and Quran.Foundation) can see your device's IP address. How Quran.Foundation handles that is described in <a href="https://quran.com/privacy">their privacy policy</a>.</p>
+
+<h2>Keeping the service safe</h2>
+<p>To stop automated abuse of our Quran text relay, the app proves to it that the request comes from a genuine copy of One Purpose on a real Apple device, using Apple's App Attest. This sends a random, anonymous key identifier created on your device and Apple's signed proof, never your name, Apple ID or anything you read. It happens whether or not you enable usage statistics, and the identifier is deleted with the app. The relay also counts how many requests come from each IP address for a few seconds so it can slow down abuse; it does not keep a log of them. The app also checks a small settings file on the relay at launch, which is how we can show a short maintenance notice or ask people to update; that request carries nothing about you.</p>
 
 <h2>What is sent off your device</h2>
 
@@ -92,6 +95,7 @@
   <tr><td>Reading position, streak, settings</td><td>Running the app</td><td>Never — device only</td></tr>
   <tr><td>Crash diagnostics</td><td>Fixing faults</td><td>On crash, only if you opt in</td></tr>
   <tr><td>Anonymous usage events</td><td>Understanding which features are used</td><td>Only if you opt in</td></tr>
+  <tr><td>Anonymous app-integrity key identifier (App Attest)</td><td>Protecting the Quran text relay from abuse</td><td>Automatically; device-generated, not linked to you</td></tr>
   <tr><td>Requests for Quran text and translations</td><td>Showing the text you chose</td><td>When you read; sent to Quran.Foundation</td></tr>
   <tr><td>Name, email, contacts, location, photos</td><td>—</td><td>Never collected</td></tr>
 </table>
